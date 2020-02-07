@@ -545,12 +545,21 @@ header {
         top: -116px !important;
     }
 }
+@media only screen and (max-width: 1200px) {
+    .list-group-horizontal {
+        flex-direction: column!important;
+    }
+}
 
 @media only screen and (max-width: 600px) {
     .cart-section-substrate {
         min-height: auto !important;
     }
-
+    .fire-safety-list-item  {
+        
+        
+    }
+    
     .form-col-margin {
         /* padding-left: 5px!important;
         padding-right: 5px; */
@@ -1164,7 +1173,7 @@ footer {
     margin: 0;
 }
 
-.defending-work-wrapper {
+.defending-work-wrapper-wrapper {
     margin: 0 auto;
     max-width: 1440px;
     min-height: 528px;
@@ -1172,7 +1181,7 @@ footer {
     background-size: cover;
 }
 
-.defending-work-wrapper h2 {
+.service-page-wrapper h2 {
     font-style: normal;
     font-weight: 800;
     font-size: 46px;
@@ -1182,7 +1191,7 @@ footer {
     min-height: 128px;
 }
 
-.defending-work-wrapper p {
+.service-page-wrapper p {
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
@@ -1190,7 +1199,7 @@ footer {
     color: #FFFFFF;
 }
 
-.defending-work-wrapper button {
+.service-page-wrapper button {
     background: linear-gradient(257.47deg, #FED578 -2.95%, #FFEA7C 100%);
     box-shadow: 0px 15px 35px rgba(98, 233, 222, 0.1);
     border-radius: 5px;
@@ -1204,7 +1213,7 @@ footer {
     color: #272C3A;
 }
 
-.defending-work-wrapper button:hover {
+.service-page-wrapper button:hover {
     background: linear-gradient(254.74deg, #d4b36b -2.95%, rgb(189, 172, 90) 100%);
 }
 
@@ -1219,7 +1228,7 @@ footer {
     background: linear-gradient(254.74deg, #d4b36b -2.95%, rgb(189, 172, 90) 100%);
 }
 
-.defending-work-wrapper-row {
+.service-page-wrapper-row {
     padding: 150px 0 150px 0;
 }
 
@@ -1242,7 +1251,7 @@ footer {
     background-size: cover;
 }
 
-.page-defending-work-wrapper {
+.service-page-wrapper {
     margin: 0 auto;
     min-height: 324px;
     max-height: auto;
@@ -1254,8 +1263,14 @@ footer {
 .industrial-safety-wrapper {
     background: url(../img/industrial-safety-wrapper-background.jpg) no-repeat;
 }
+.fire-safety-wrapper {
+    background: url(../img/fire-safety-wrapper-background.jpg) no-repeat;
+}
+.electrical-safety-wrapper {
+    background: url(../img/electrical-safety-wrapper-background.jpg) no-repeat;
+}
 
-.page-defending-work-button-links-wrapper {
+.service-page-button-links-wrapper {
     min-height: 80px;
     border-bottom: 1px solid #EFF5F9;
     justify-content: center;
@@ -1297,7 +1312,7 @@ footer {
     text-align: justify;
 }
 
-.page-defending-work-button-links-wrapper a {
+.service-page-button-links-wrapper a {
     font-style: normal;
     font-weight: normal;
     font-size: 15px;
@@ -1321,19 +1336,19 @@ footer {
 }
 
 
-.page-defending-work-learning {
+.page-service-learning {
     padding: 96px 0 0 0;
 }
 
-.page-defending-work-learning p {
+.page-service-learning p {
     margin: 25px 0 0 0;
 }
 
-.page-defending-work-kwnoladge {
+.page-service-kwnoladge {
     padding: 120px 0 100px 0;
 }
 
-.page-defending-work-kwnoladge p {
+.page-service-page-kwnoladge p {
     margin: 25px 0 0 0;
 }
 
@@ -1352,7 +1367,7 @@ footer {
     color: #FFFFFF;
 }
 
-.page-defending-work-button-test {
+.service-page-button-test {
     background: linear-gradient(255.15deg, #FED578 -2.95%, #FFEA7C 100%);
     box-shadow: 0px 6px 25px rgba(255, 188, 57, 0.3);
     border-radius: 5px;
@@ -1362,7 +1377,7 @@ footer {
     margin: 50px 0 0 0;
 }
 
-.page-defending-work-button-test a {
+.service-page-button-test a {
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -1370,7 +1385,7 @@ footer {
     color: #272C3A;
 }
 
-.page-defending-work-button-test:hover {
+.service-page-button-test:hover {
     text-decoration: none;
     background: linear-gradient(254.74deg, #d4b36b -2.95%, rgb(189, 172, 90) 100%);
 }
@@ -1437,7 +1452,6 @@ footer {
     line-height: 140%;
     color: #FFFFFF;
     margin: 15px 0 0 0;
-    opacity: 0.7;
     text-align: left;
 }
 
@@ -1645,3 +1659,37 @@ footer {
     line-height: 160%;
     color: #272C3A;
 }
+.fire-safety-list ul {
+    list-style: none;
+}
+.fire-safety-list ul li::before {
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: #439AD8; /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: -1em; /* Also needed for space (tweak if needed) */
+  }
+  .fire-safety-list-item {
+      padding-right: 137px;
+      font-size: 16px;
+  } 
+  .fire-safety-list-items {
+      margin-top: 24px;
+      margin-left: 15px;
+  }
+  .fire-safety-page-padding {
+      padding-bottom: 100px;
+  }
+  .fire-safety-white-span  {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    margin-top: 50px;
+    line-height: 35px;
+    /* opacity: 1!important; */
+    color: #FFFFFF;
+  }
+  .fire-safety-opacity-span {
+    opacity: 0.7;
+  }
