@@ -545,9 +545,10 @@ header {
         top: -116px !important;
     }
 }
+
 @media only screen and (max-width: 1200px) {
     .list-group-horizontal {
-        flex-direction: column!important;
+        flex-direction: column !important;
     }
 }
 
@@ -555,11 +556,9 @@ header {
     .cart-section-substrate {
         min-height: auto !important;
     }
-    .fire-safety-list-item  {
-        
-        
-    }
-    
+
+    .fire-safety-list-item {}
+
     .form-col-margin {
         /* padding-left: 5px!important;
         padding-right: 5px; */
@@ -1260,12 +1259,15 @@ footer {
     max-width: 1440px;
     background: url(../img/page-defending-work-wrapper-background.jpg) no-repeat;
 }
+
 .industrial-safety-wrapper {
     background: url(../img/industrial-safety-wrapper-background.jpg) no-repeat;
 }
+
 .fire-safety-wrapper {
     background: url(../img/fire-safety-wrapper-background.jpg) no-repeat;
 }
+
 .electrical-safety-wrapper {
     background: url(../img/electrical-safety-wrapper-background.jpg) no-repeat;
 }
@@ -1597,7 +1599,7 @@ footer {
     max-width: 1160px;
     min-height: 546px;
     padding: 60px 0 50px 0;
-    margin: 120px auto;
+    margin: 140px auto;
     border: 10px solid #ffe07a;
     outline-offset: -10px;
     background: #FFFFFF;
@@ -1659,29 +1661,41 @@ footer {
     line-height: 160%;
     color: #272C3A;
 }
+
 .fire-safety-list ul {
     list-style: none;
 }
+
 .fire-safety-list ul li::before {
-    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
-    color: #439AD8; /* Change the color */
-    font-weight: bold; /* If you want it to be bold */
-    display: inline-block; /* Needed to add space between the bullet and the text */
-    width: 1em; /* Also needed for space (tweak if needed) */
-    margin-left: -1em; /* Also needed for space (tweak if needed) */
-  }
-  .fire-safety-list-item {
-      padding-right: 137px;
-      font-size: 16px;
-  } 
-  .fire-safety-list-items {
-      margin-top: 24px;
-      margin-left: 15px;
-  }
-  .fire-safety-page-padding {
-      padding-bottom: 100px;
-  }
-  .fire-safety-white-span  {
+    content: "\2022";
+    /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: #439AD8;
+    /* Change the color */
+    font-weight: bold;
+    /* If you want it to be bold */
+    display: inline-block;
+    /* Needed to add space between the bullet and the text */
+    width: 1em;
+    /* Also needed for space (tweak if needed) */
+    margin-left: -1em;
+    /* Also needed for space (tweak if needed) */
+}
+
+.fire-safety-list-item {
+    padding-right: 137px;
+    font-size: 16px;
+}
+
+.fire-safety-list-items {
+    margin-top: 24px;
+    margin-left: 15px;
+}
+
+.fire-safety-page-padding {
+    padding-bottom: 100px;
+}
+
+.fire-safety-white-span {
     font-style: normal;
     font-weight: bold;
     font-size: 15px;
@@ -1689,7 +1703,38 @@ footer {
     line-height: 35px;
     /* opacity: 1!important; */
     color: #FFFFFF;
-  }
-  .fire-safety-opacity-span {
+}
+
+.fire-safety-opacity-span {
     opacity: 0.7;
-  }
+}
+
+.aditional-services-wrapper {
+    margin: 0 auto;
+    max-width: 1440px;
+    background: #F2F2F2;
+    padding: 70px 0 100px 0;
+}
+
+.aditional-services-row {
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 50px;
+    margin: 0 0 25px 0;
+}
+
+.h2-aditional-services {
+    color: #1F2433;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 47px;
+}
+
+.p-aditional-services {
+    font-style: normal;
+    font-weight: 350;
+    font-size: 18px;
+    line-height: 27px;
+    color: #646875;
+}
