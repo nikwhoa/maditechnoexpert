@@ -536,13 +536,22 @@ header {
 
 }
 
-@media only screen and (width: 1024px) {
+@media only screen and (max-width: 1024px) {
     .call-us {
         display: none !important;
     }
 
     .form-women-background {
         top: -116px !important;
+    }
+}
+
+@media only screen and (max-width: 990px) {
+    .card-deck {
+        margin: 0 auto !important;
+        /* display: block!important;
+        flex: none!important; */
+        flex-flow: column !important;
     }
 }
 
@@ -1036,6 +1045,7 @@ footer {
 .about-company h1 {
     font-weight: 800;
     font-size: 48px;
+    word-break: break-all;
     line-height: 160%;
 }
 
@@ -1180,7 +1190,7 @@ footer {
     background-size: cover;
 }
 
-.service-page-wrapper h2 {
+.services-page-wrapper h2 {
     font-style: normal;
     font-weight: 800;
     font-size: 46px;
@@ -1190,7 +1200,7 @@ footer {
     min-height: 128px;
 }
 
-.service-page-wrapper p {
+.services-page-wrapper p {
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
@@ -1198,7 +1208,7 @@ footer {
     color: #FFFFFF;
 }
 
-.service-page-wrapper button {
+.services-page-wrapper button {
     background: linear-gradient(257.47deg, #FED578 -2.95%, #FFEA7C 100%);
     box-shadow: 0px 15px 35px rgba(98, 233, 222, 0.1);
     border-radius: 5px;
@@ -1212,7 +1222,7 @@ footer {
     color: #272C3A;
 }
 
-.service-page-wrapper button:hover {
+.services-page-wrapper button:hover {
     background: linear-gradient(254.74deg, #d4b36b -2.95%, rgb(189, 172, 90) 100%);
 }
 
@@ -1238,15 +1248,28 @@ footer {
 .industrial-safety {
     background: url(../img/industrial-safety-background.jpg) no-repeat;
     background-size: cover;
+    background-position: center center;
 }
 
 .fire-safety {
     background: url(../img/fire-safety-background.jpg) no-repeat;
     background-size: cover;
+    background-position: center center;
 }
 
 .electrical-safety {
     background: url(../img/electrical-safety-background.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.contacts-map-wrapper {
+    margin: 0 auto;
+    min-height: 500px;
+    max-width: 1440px;
+    border-radius: 5px;
+    background: url(../img/contacts-map.jpg) no-repeat;
+    background-position: center center;
     background-size: cover;
 }
 
@@ -1257,19 +1280,66 @@ footer {
     color: #FFFFFF;
     text-align: center;
     max-width: 1440px;
+}
+.services-page-wrapper {
+    margin: 0 auto;
+    min-height: 324px;
+    max-height: auto;
+    color: #FFFFFF;
+    /* text-align: center; */
+    max-width: 1440px;
+}
+.defending-work-wrapper {
+    background-size: cover;
+    background-position: center center;
     background: url(../img/page-defending-work-wrapper-background.jpg) no-repeat;
 }
-
 .industrial-safety-wrapper {
     background: url(../img/industrial-safety-wrapper-background.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.aditional-services-background {
+    background: url(../img/aditional-services-background.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
 }
 
 .fire-safety-wrapper {
     background: url(../img/fire-safety-wrapper-background.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.contacts-background {
+    background: url(../img/contacts-background.jpg) no-repeat;
+    background-position: center center;
+    background-size: cover;
 }
 
 .electrical-safety-wrapper {
     background: url(../img/electrical-safety-wrapper-background.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+}
+
+.laws-wrapper {
+    background: url(../img/laws-wrapper-background.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.blog-wrapper {
+    background: url(../img/blog-wrapper-background.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.price-background {
+    background: url(../img/price-background-wrapper.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
 }
 
 .service-page-button-links-wrapper {
@@ -1328,6 +1398,7 @@ footer {
     line-height: 140%;
     color: #1F2433;
     margin: 0 auto;
+    word-break: break-all;
 }
 
 .h2-white-style {
@@ -1738,3 +1809,280 @@ footer {
     line-height: 27px;
     color: #646875;
 }
+
+.contacts-information {
+    max-width: 1160px;
+    background: #FFFFFF;
+    min-height: 152px;
+    box-shadow: 0px 0px 65px rgba(0, 0, 0, 0.06);
+    border-radius: 10px;
+    position: relative;
+    z-index: 2;
+    top: -80px;
+
+}
+
+.contacts-information-substrate {
+    max-width: 1080px;
+    min-height: 140px;
+    position: relative;
+    z-index: 1;
+    top: -200px;
+    background: #FDFDFD;
+    box-shadow: 0px 0px 65px rgba(0, 0, 0, 0.06);
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contacts-form-margin {
+    margin: 10px auto;
+}
+
+.p-contacts-style {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 160%;
+    margin-top: 15px;
+    color: #414551;
+}
+
+.contacts-section-title {
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #282530;
+    display: inline-block;
+}
+
+.contacts-address img {
+    margin: 0 15px 0 0;
+}
+
+.contacts-section {
+    min-width: 350px;
+    max-height: 73px;
+    padding: 48px 0 20px 70px;
+}
+
+.contacts-section ul {
+    list-style: none;
+}
+
+.contacts-section ul li::before {
+    content: "\2022";
+    /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: #66D1FF;
+    /* Change the color */
+    font-weight: bold;
+    /* If you want it to be bold */
+    display: inline-block;
+    /* Needed to add space between the bullet and the text */
+    width: 1em;
+    /* Also needed for space (tweak if needed) */
+    margin-left: -1em;
+    /* Also needed for space (tweak if needed) */
+}
+
+.p-contacts-style a {
+    color: inherit;
+}
+
+.laws-list h2 {
+    padding-bottom: 25px;
+}
+
+.laws-list {
+    padding: 120px 0 0 0;
+}
+
+.laws-list ul {
+    list-style: none;
+}
+
+.laws-list ul li {
+    padding: 20px 0 0 0;
+}
+
+.laws-list ul li::before {
+    content: "\2022";
+    /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: #439AD8;
+    /* Change the color */
+    font-weight: bold;
+    /* If you want it to be bold */
+    display: inline-block;
+    /* Needed to add space between the bullet and the text */
+    width: 1em;
+    /* Also needed for space (tweak if needed) */
+    margin-left: -1em;
+    /* Also needed for space (tweak if needed) */
+}
+
+.laws-margin {
+    margin-bottom: 120px;
+}
+
+.news-contariner {
+    margin-top: -40px;
+}
+
+.card {
+    border: none;
+    background: #F9FCFD;
+    ;
+}
+
+.card-text {
+    font-size: 16px;
+    line-height: 180%;
+    margin: 20px 0 70px 0;
+}
+
+.card-title {
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 140%;
+    color: #282530;
+}
+
+.card-footer button img {
+    margin-left: 20px;
+}
+
+.card-footer {
+    min-width: 265px;
+    min-height: 65px;
+    border: none;
+    background: none;
+}
+
+.card-footer button {
+    min-width: 265px;
+    min-height: 65px;
+    border: transparent;
+    border-radius: 100px;
+    background: url(../img/blog-button-background.png) no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.card-footer button:hover {
+    background: linear-gradient(238.73deg, #7AC7FF 27.31%, #76E6FF 100%);
+    box-shadow: 0px 35px 65px rgba(120, 212, 255, 0.05);
+    border-radius: 100px;
+
+}
+.price-row {
+    padding-top:120px ;
+}
+.price-table {
+    border: 10px solid transparent;
+    border-radius: 50px;
+}
+.price-h2 {
+    text-align: center;
+}
+.table thead th {
+    border-right:2px solid #F2F2F2;
+    border-left: none;
+    border-top: none;
+    border-bottom: none;
+}
+.thead-yellow {
+    border: none;
+    background: linear-gradient(220.48deg, #FED578 -2.95%, #FFEA7C 100%);
+}
+.table-striped tr td {
+    border-right:2px solid #f3f3f3;
+    border-left: 2px solid #f3f3f3;
+    border-top: none;
+    border-bottom: 2px solid #f3f3f3;
+}
+.table-striped tbody tr:nth-of-type(odd) {
+
+}
+div.blueTable {
+    background-color: #ffffff;
+    text-align: left;
+    border-collapse: collapse;
+  }
+  .divTable.blueTable .divTableCell, .divTable.blueTable .divTableHead {
+    border: 1px solid #f3f3f3;
+    /* padding: 10px 0px; */
+  }
+  .divTable.blueTable .divTableBody .divTableCell {
+    font-size: 16px;
+  }
+  .divTable.blueTable .divTableRow:nth-child(even) {
+    background: #f9f9f9;
+  }
+  .divTable.blueTable .divTableHeading {
+    
+      text-transform: uppercase;
+    background: linear-gradient(220.48deg, #FED578 -2.95%, #FFEA7C 100%);
+    /* background: -moz-linear-gradient(top, #5592bb 0%, #327cad 66%, #1C6EA4 100%); */
+    /* background: -webkit-linear-gradient(top, #5592bb 0%, #327cad 66%, #1C6EA4 100%); */
+    /* background: linear-gradient(to bottom, #5592bb 0%, #327cad 66%, #1C6EA4 100%); */
+  }
+  .divTable.blueTable .divTableHeading .divTableHead {
+    font-size: 12px;
+    height: 60px;
+    text-align: start;
+    vertical-align: middle;
+    font-weight: bold;
+    color: #272C3A;
+    border-left: 1px solid #f3f3f3;
+  }
+  .divTable.blueTable .divTableHeading .divTableHead:first-child {
+    border-left: none;
+  }
+  .table-first-row {
+      width: 60%;
+      vertical-align: middle;
+      padding-right: 110px!important;
+    padding-left: 30px!important;
+  }
+  .blueTable .tableFootStyle {
+    font-size: 14px;
+  }
+  .blueTable .tableFootStyle .links {
+       text-align: right;
+  }
+  .blueTable .tableFootStyle .links a{
+    display: inline-block;
+    background: #1C6EA4;
+    color: #FFFFFF;
+    padding: 2px 8px;
+    border-radius: 5px;
+  }
+  .blueTable.outerTableFooter {
+    border-top: none;
+  }
+  .blueTable.outerTableFooter .tableFootStyle {
+    padding: 3px 5px; 
+  }
+  /* DivTable.com */
+  .divTable{ display: table; width: 100%; }
+  .divTableRow { display: table-row; height: 100px;}
+  .divTableHeading { display: table-header-group; height: 60px;}
+  .divTableCell, .divTableHead { display: table-cell;}
+  .divTableHeading { display: table-header-group;}
+  .divTableFoot { display: table-footer-group;}
+  .divTableBody { display: table-row-group;}
+  .table-cell-center {
+      text-align: center;
+      vertical-align: middle;
+      font-weight: bold;
+  }
+  .extra-cell {
+      vertical-align: middle;
+      height: 48px;
+      border: 1px solid #f3f3f3;
+      padding: 10px;
+  }
+  .head-row {
+      height: 60px;
+  }
