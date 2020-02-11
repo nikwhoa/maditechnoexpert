@@ -147,7 +147,9 @@ header {
     padding-top: 127px;
     max-width: 1440px;
     min-height: 950px;
-    background: url(../img/background-first-screen.jpg) no-repeat 100%;
+    background: url(../img/background-first-screen.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
 }
 
 .first-screen-description {
@@ -553,6 +555,13 @@ header {
         flex: none!important; */
         flex-flow: column !important;
     }
+    .choose-service-section button {
+        margin: 10px auto;
+        width: 100%;
+    }
+    .phone {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 1200px) {
@@ -565,7 +574,32 @@ header {
     .cart-section-substrate {
         min-height: auto !important;
     }
-
+    .address {
+        display: none;
+    }
+    .happy-clients h2 {
+        font-size: 28px!important;
+    }
+    .our-service-row-first-section h2 {
+        font-size: 28px;
+    }
+    .our-service-row-second-section {
+        display: block;
+    }
+    .choose-service-section button {
+        margin: 10px auto;
+        width: 100%;
+    }
+    .phone {
+        display: none;
+    }
+    .menu-button img {
+        margin-right: 10px!important;
+    }
+    .call-us {
+        display: block!important;
+        margin: 0 auto;
+    }
     .fire-safety-list-item {}
 
     .form-col-margin {
